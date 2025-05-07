@@ -83,11 +83,11 @@ jobs:
       #     echo "${{ secrets.AC_HARNESS_TF_MODULES_PVT_KEY }}" > ~/.ssh/id_rsa
       #     chmod 600 ~/.ssh/id_rsa
 
-      # - uses: azure/login@v1
-      #   with:
-      #    client-id: ${{ secrets.DEV_AZURE_CLIENT_ID }}
-      #    tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-      #    # subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - uses: azure/login@v1
+        with:
+         client-id: ${{ secrets.DEV_AZURE_CLIENT_ID }}
+         tenant-id: ${{ secrets.DEV_AZURE_TENANT_ID }}
+         subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       #    allow-no-subscriptions: true
       #     # creds: ${{ secrets.AZURE_CREDENTIALS }}
 
@@ -96,11 +96,11 @@ jobs:
       #     creds: ${{ secrets.AZURE_CREDENTIALS }}
 
 
-      - uses: azure/login@v1
-        with:
-         client-id: 084f318f-40aa-4d40-93ea-5ed3472b66bc
-         tenant-id: abec7981-3822-4685-98b0-533aca20c2ed
-         subscription-id: ee902f6d-01a9-4a32-8c5f-af9403e6c766
+      # - uses: azure/login@v1
+      #   with:
+      #    client-id: 084f318f-40aa-4d40-93ea-5ed3472b66bc
+      #    tenant-id: abec7981-3822-4685-98b0-533aca20c2ed
+      #    subscription-id: ee902f6d-01a9-4a32-8c5f-af9403e6c766
       #    allow-no-subscriptions: true
           # creds: ${{ secrets.AZURE_CREDENTIALS }}
       
