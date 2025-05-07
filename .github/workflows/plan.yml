@@ -91,9 +91,9 @@ jobs:
       #    allow-no-subscriptions: true
       #     # creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: azure/login@v2
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      # - uses: azure/login@v2
+      #   with:
+      #     creds: ${{ secrets.AZURE_CREDENTIALS }}
 
 
       - uses: azure/login@v1
