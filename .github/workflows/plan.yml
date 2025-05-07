@@ -40,12 +40,12 @@ on:
         backendAzureRmKey:
             description: 'AC_HARNESS_TF_MODULES_PVT_KEY'
             required: true   
-        client-id:
-            description: 'Client ID'
-            required: true   
-        tenant-id:
-            description: 'Tenant ID'
-            required: true  
+        # client-id:
+        #     description: 'Client ID'
+        #     required: true   
+        # tenant-id:
+        #     description: 'Tenant ID'
+        #     required: true  
             
   workflow_dispatch:
   
