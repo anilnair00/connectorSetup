@@ -34,8 +34,8 @@ jobs:
       backendAzureRmStorageAccountName: ${{ vars.backendAzureRmStorageAccountName }}
       backendAzureRmContainerName: ${{ vars.backendAzureRmContainerName }}
       backendAzureRmKey: ${{ vars.backendAzureRmKey }}
-      client_id: ${{ secrets.client_id }}
-      tenant_id: ${{ secrets.tenant_id }}
+      client_id: ${{ vars.client_id }}
+      tenant_id: ${{ vars.tenant_id }}
       
   harness_apply:
     name: Harness Apply
