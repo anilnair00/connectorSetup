@@ -80,11 +80,11 @@ jobs:
           echo "Latest changed directory: $LAST_CHANGED_DIR"
           echo "::set-output name=dir::$LAST_CHANGED_DIR"
           
-      - name: Copy private key to download remote repo files
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.AC_HARNESS_TF_MODULES_PVT_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+      # - name: Copy private key to download remote repo files
+      #   run: |
+      #     mkdir -p ~/.ssh
+      #     echo "${{ secrets.AC_HARNESS_TF_MODULES_PVT_KEY }}" > ~/.ssh/id_rsa
+      #     chmod 600 ~/.ssh/id_rsa
 
       - uses: azure/login@v1
         with:
