@@ -94,6 +94,16 @@ jobs:
       - uses: azure/login@v2
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+
+      - uses: azure/login@v1
+        with:
+         client-id: 084f318f-40aa-4d40-93ea-5ed3472b66bc
+         tenant-id: abec7981-3822-4685-98b0-533aca20c2ed
+         subscription-id: ee902f6d-01a9-4a32-8c5f-af9403e6c766
+      #    allow-no-subscriptions: true
+          # creds: ${{ secrets.AZURE_CREDENTIALS }}
+      
         
       # - name: Configure aws credentials
       #   uses: aws-actions/configure-aws-credentials@v4
