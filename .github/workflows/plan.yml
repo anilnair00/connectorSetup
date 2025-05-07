@@ -27,12 +27,12 @@ on:
         required: true
       AC_HARNESS_TF_MODULES_PVT_KEY:
         description: 'AC_HARNESS_TF_MODULES_PVT_KEY'
-      backendAzureRmUseEnvironmentVariablesForAuthentication:
-        description: 'test'
-        required: true
-      backendServiceArm:
-        description: 'HARNESS_ACCOUNT_ID'
-        required: true
+      # backendAzureRmUseEnvironmentVariablesForAuthentication:
+      #   description: 'test'
+      #   required: true
+      # backendServiceArm:
+      #   description: 'HARNESS_ACCOUNT_ID'
+      #   required: true
       backendAzureRmResourceGroupName:
         description: 'HARNESS_PLATFORM_API_KEY'
         required: true
