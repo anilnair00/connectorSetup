@@ -14,7 +14,12 @@ on:
         required: false
         type: string
         default: './'
-
+permissions:
+    id-token: write   # This is required for requesting the JWT..
+    contents: read
+    packages: write
+    pull-requests: write 
+    
     secrets:
       TF_VAR_HARNESS_ENDPOINT:
         description: 'HARNESS_ENDPOINT'
