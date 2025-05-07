@@ -72,13 +72,13 @@ jobs:
       #     echo "${{ secrets.AC_HARNESS_TF_MODULES_PVT_KEY }}" > ~/.ssh/id_rsa
       #     chmod 600 ~/.ssh/id_rsa
 
-      - uses: azure/login@v2
+      - uses: azure/login@v1
         with:
-         client-id: ${{ secrets.DEV_AZURE_CLIENT_ID }}
-         tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-         subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+         # client-id: ${{ secrets.DEV_AZURE_CLIENT_ID }}
+         # tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+         # subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
          # allow-no-subscriptions: true
-          # creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
         
       # - name: Configure aws credentials
       #   uses: aws-actions/configure-aws-credentials@v4
