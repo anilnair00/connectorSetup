@@ -28,7 +28,7 @@ jobs:
     secrets:
       TF_VAR_HARNESS_ENDPOINT: ${{ vars.TF_VAR_HARNESS_ENDPOINT }}
       TF_VAR_HARNESS_ACCOUNT_ID: ${{ vars.TF_VAR_HARNESS_ACCOUNT_ID }}
-      TF_VAR_HARNESS_PLATFORM_API_KEY: ${{ vars.TF_VAR_HARNESS_PLATFORM_API_KEY }}
+      TF_VAR_HARNESS_PLATFORM_API_KEY: ${{ secrets.TF_VAR_HARNESS_PLATFORM_API_KEY }}
       # AC_HARNESS_TF_MODULES_PVT_KEY: ${{ vars.AC_HARNESS_TF_MODULES_PVT_KEY }}
       backendAzureRmResourceGroupName: ${{ vars.backendAzureRmResourceGroupName }}
       backendAzureRmStorageAccountName: ${{ vars.backendAzureRmStorageAccountName }}
