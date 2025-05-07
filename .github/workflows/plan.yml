@@ -40,10 +40,10 @@ on:
         backendAzureRmKey:
             description: 'AC_HARNESS_TF_MODULES_PVT_KEY'
             required: true   
-        clientid:
+        client-id:
             description: 'Client ID'
             required: true   
-        tenantid:
+        tenant-id:
             description: 'Tenant ID'
             required: true  
             
