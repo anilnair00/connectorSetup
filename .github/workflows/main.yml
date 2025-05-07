@@ -9,8 +9,7 @@ on:
         type: choice
         options:
           - prd
-          - non-prd
-  
+          - non-prd  
 permissions:
     id-token: write   # This is required for requesting the JWT..
     contents: read
@@ -30,8 +29,6 @@ jobs:
       TF_VAR_HARNESS_ACCOUNT_ID: ${{ secrets.TF_VAR_HARNESS_ACCOUNT_ID }}
       TF_VAR_HARNESS_PLATFORM_API_KEY: ${{ secrets.TF_VAR_HARNESS_PLATFORM_API_KEY }}
       AC_HARNESS_TF_MODULES_PVT_KEY: ${{ secrets.AC_HARNESS_TF_MODULES_PVT_KEY }}
-      # backendAzureRmUseEnvironmentVariablesForAuthentication: true
-      # backendServiceArm: 'api'
       backendAzureRmResourceGroupName: ${{ secrets.backendAzureRmResourceGroupName }}
       backendAzureRmStorageAccountName: ${{ secrets.backendAzureRmStorageAccountName }}
       backendAzureRmContainerName: ${{ secrets.backendAzureRmContainerName }}
