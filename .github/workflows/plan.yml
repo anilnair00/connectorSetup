@@ -16,15 +16,6 @@ on:
         default: './'
 
     secrets:
-      # AWS_REGION:
-      #   description: 'AWS Region'
-      #   required: true
-      # AWS_OIDC_ROLE_ARN_NONPROD:
-      #   description: 'OIDC ROle'
-      #   required: true
-      # S3_BACKEND_ROLE_PROD_ARN:
-      #   description: 'S3 BACKEND ROLE ARN'
-      #   required: true
       TF_VAR_HARNESS_ENDPOINT:
         description: 'HARNESS_ENDPOINT'
         required: true
