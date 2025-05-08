@@ -25,7 +25,7 @@ locals {
 
 module "azure_irsa_connectors" {
 #  source     = "git@github.com:anilnair00/connectorSetup.git//modules/test?ref=main"
-  source = "./modules/test"
+  source = "./modules/"
   connectors = local.connectors
   tags       = local.default_tags_list
 }
