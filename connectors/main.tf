@@ -23,8 +23,9 @@ locals {
   ])
 }
 
-module "aws_irsa_connectors" {
-  source     = "git@github.com:anilnair00/connectorSetup.git//modules/test?ref=main"
+module "azure_irsa_connectors" {
+#  source     = "git@github.com:anilnair00/connectorSetup.git//modules/test?ref=main"
+  source = "./modules/test"
   connectors = local.connectors
   tags       = local.default_tags_list
 }
