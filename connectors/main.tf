@@ -24,7 +24,7 @@ locals {
 }
 
 module "aws_irsa_connectors" {
-  source     = "git@github.com:AC-DevOpsTools-Management/ac-harness-tf-modules.git//modules/harness-aws-irsa-connectors?ref=develop"
+  source     = "git@github.com:anilnair00/connectorSetup.git//modules/test?ref=main"
   connectors = local.connectors
   tags       = local.default_tags_list
 }
