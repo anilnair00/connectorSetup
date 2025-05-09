@@ -29,3 +29,9 @@ module "azure_irsa_connectors" {
   connectors = local.connectors
   tags       = local.default_tags_list
 }
+
+module "aws_irsa_connectors" {
+  source     = "git@github.com:anilnair00/ac-harness-tf-modules-develop.git//modules/harness-aws-irsa-connectors?ref=main"
+  connectors = local.connectors
+  tags       = local.default_tags_list
+}
