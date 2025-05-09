@@ -23,13 +23,6 @@ locals {
   ])
 }
 
-module "azure_irsa_connectors" {
-#  source     = "git@github.com:anilnair00/connectorSetup.git//modules/test?ref=main"
-  source = "./modules/"
-  connectors = local.connectors
-  tags       = local.default_tags_list
-}
-
 module "aws_irsa_connectors" {
   source     = "git@github.com:anilnair00/ac-harness-tf-modules-develop.git//modules/harness-aws-irsa-connectors?ref=main"
   connectors = local.connectors
