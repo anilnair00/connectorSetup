@@ -12,5 +12,9 @@ terraform {
     harness = {
       source = "harness/harness"
     }
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "=4.1.0"
+    }
   }
 }
