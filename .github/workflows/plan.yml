@@ -116,8 +116,7 @@ jobs:
           terraform init -backend-config="resource_group_name=Testvm_group" \
                -backend-config="storage_account_name=testvmgroupb7e2" \
                -backend-config="container_name=tfstate" \
-               -backend-config="key=test.tfstate"
-               # -backend-config="access_key=test.tf"
+               -backend-config="key=mum.tfstate"
           terraform plan -var="TF_VAR_HARNESS_ENDPOINT=${{ secrets.TF_VAR_HARNESS_ENDPOINT }}" -var="TF_VAR_HARNESS_ACCOUNT_ID=${{ secrets.TF_VAR_HARNESS_ACCOUNT_ID }}" -var="TF_VAR_HARNESS_PLATFORM_API_KEY=${{ secrets.TF_VAR_HARNESS_PLATFORM_API_KEY }}"
 
       # - name: Terraform Plan Services
