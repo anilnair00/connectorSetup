@@ -1,5 +1,5 @@
-org_id                = "ACITOperationsDigitalTeam"
-project_id            = "notifications"
+org_id                = "default"
+project_id            = "default_project"
 feature_pipeline_name = "feature-ecs-deploy"
 dev_pipeline_name     = "dev-ecs-deploy"
 bat_pipeline_name     = "bat-ecs-deploy"
