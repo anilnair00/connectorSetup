@@ -6,18 +6,12 @@ locals {
   env_cross_account_role_arn_map = zipmap(local.envs, local.cross_account_role_arns)
 
   default_tags_list = [
-    "CostCode/AFC:1904",
+    "CostCode/AFC:0000",
     "Tower:operation",
-    "DepartmentID:1904",
+    "DepartmentID:0000",
     "DepartmentName:ops-digital",
     "ProjectName:Notification",
     "Application:ACNP",
-    "TechOwner:Azeem Qaiser",
-    "BusinessOwner:Pradeep Nishantha",
-    "Criticality:Critical",
-    "Sensitivity:High",
-    "ManagedBy:Terraform",
-    "tf-repo-name:ac-it-notifications-harness-resources-tf"
   ]
 
   connectors = flatten([
