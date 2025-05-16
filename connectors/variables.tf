@@ -23,12 +23,12 @@ variable "project_id" {
 }
 
 variable "envs" {
-  description = "Azure Environments"
+  description = "AWS Environments"
   type        = list(any)
 }
 
 variable "account_names" {
-  description = "Azure account name"
+  description = "AWS account name"
   type        = list(any)
 }
 
