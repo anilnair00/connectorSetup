@@ -60,8 +60,8 @@ jobs:
   terraform-plan:
     name: Terraform Plan
     runs-on: ubuntu-latest
-    environment:
-        name: ${{ inputs.gh_environment }}
+    # environment:
+    #     name: ${{ inputs.gh_environment }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
