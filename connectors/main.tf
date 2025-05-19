@@ -22,7 +22,7 @@ locals {
       org_id                        = var.org_id
       project_id                    = var.project_id
       cross_account_access_role_arn = local.env_cross_account_role_arn_map[env]
-      harnessdelegate               = env == "prod" ? var.kubernetes_delegate_prod : var.kubernetes_delegate_nonprod
+      harnessdelegate               = env == "prd" ? var.kubernetes_delegate_prod : var.kubernetes_delegate_nonprod
       region                        = var.region
     }
   ])
