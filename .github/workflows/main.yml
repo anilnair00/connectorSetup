@@ -36,7 +36,7 @@ jobs:
       backendAzureRmKey: ${{ vars.backendAzureRmKey }}
       client_id: ${{ vars.client_id }}
       tenant_id: ${{ vars.tenant_id }}
-      AZURE_CREDENTIALS: ${{ vars.AZURE_CREDENTIALS }}
+      # AZURE_CREDENTIALS: ${{ vars.AZURE_CREDENTIALS }}
       
   harness_apply:
     name: Harness Apply
@@ -56,7 +56,7 @@ jobs:
       backendAzureRmKey: ${{ vars.backendAzureRmKey }}
       client_id: ${{ vars.client_id }}
       tenant_id: ${{ vars.tenant_id }}
-      AZURE_CREDENTIALS: ${{ vars.AZURE_CREDENTIALS }}
+      # AZURE_CREDENTIALS: ${{ vars.AZURE_CREDENTIALS }}
       
       # AWS_REGION: ${{ vars.AWS_REGION }}
       # AWS_OIDC_ROLE_ARN_NONPROD: ${{ vars.AC_ENTERPRISETOOLS_PROD_INFRA_OIDC_ROLE_ARN }}
